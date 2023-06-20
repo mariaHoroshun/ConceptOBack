@@ -16,6 +16,16 @@ namespace ConceptOBack.Models
         public string Description { get; set; } = null!;
 
         /// <summary>
+        /// Ссылка на картинку
+        /// </summary>
+        public string? BackPictureUrl { get; set; }
+
+        /// <summary>
+        /// Ссылка на картинку
+        /// </summary>
+        public string? IconPictureUrl { get; set; }
+
+        /// <summary>
         /// Ссылка на подробную информацию
         /// </summary>
         public string UrlInfo { get; set; } = null!;

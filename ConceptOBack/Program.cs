@@ -13,7 +13,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<Seed>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
+builder.Services.AddScoped<ISettingRepository, SettingRepository>();
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseNpgsql("Host=localhost;Port=5432;Database=concept-o;Username=postgres;Password=postgres");

@@ -15,6 +15,11 @@
         public string BaseDescription { get; set; } = null!;
 
         /// <summary>
+        /// Ссылка на картинку
+        /// </summary>
+        public string? PictureUrl { get; set; }
+
+        /// <summary>
         /// Автор персонажа
         /// </summary>
         public User User { get; set; } = null!;
